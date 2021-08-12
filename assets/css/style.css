@@ -1,62 +1,111 @@
-body {
+body, .container-fluid {
     width: 100%;
-    background-image: url(../img/food.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
     font-family: 'Dosis', sans-serif;
 }
+
 nav {
     background-color: transparent;
+    color: white;
+    height: 5vh;
 }
+
+.firstpage {
+    background-image: url(../img/food.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 a {
     color: white;
 }
+
 a:hover {
     color: white;
 }
+
 #navbarDropdownMenuLink:hover {
-font-size: 20px;
+    font-size: 20px;
 }
+
 .dropdown-menu[data-bs-popper] {
-    top: 80%;
-    left: 2px;
-    right: 2px;
+    top: 100%;
     border-radius: 0;
+    border-bottom: 0.5px solid white;
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+.dropdown-items {
+    text-decoration: none;
+}
+
+.dropdown-items:hover {
+    color: #141517;
+    font-weight: 900;
+}
+
 li {
     text-align: center;
+    border-top: 0.5px solid white;
 }
+
 li:hover {
-    background-color: rgb(214, 214, 214);
+    background-color: rgba(214, 214, 214, 0.5);
+    box-shadow: 0 0 1px 1px white;
+    padding: 5px;
 }
+#navbarDropdownMenuLink {
+    text-align: right;
+}
+
 p {
     color: white;
     font-family: 'Dosis', sans-serif;
     font-size: 17px;
     text-align: center;
 }
+
 sup {
     font-size: 11px;
 }
-.dropdown-items {
-    text-decoration: none;
-}
-.dropdown-items:hover {
-    background-color: rgb(214, 214, 214);
-    color: black;
-}
+
 .button-clignote {
     animation-duration: 2s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: ease-in-out;
- }
- @keyframes clignoter {
-   0%   { opacity:1;
-        text-shadow: 1px 0 1px; }
-   40%  { opacity:0.8; }
-   100% { opacity:1;
-        text-shadow: 1px 0 1px; }
- }
+}
+
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+        text-shadow: 1px 0 2px;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 2px;
+    }
+}
+
+img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.infos {
+    height: 30vh;
+}
