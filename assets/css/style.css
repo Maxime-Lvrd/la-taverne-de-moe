@@ -2,6 +2,7 @@ body, .container-fluid {
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: black;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -98,7 +99,6 @@ sup {
 
 img {
     width: 100%;
-    padding-top: 10px;
 }
 
 .row {
@@ -108,4 +108,27 @@ img {
 
 .infos {
     height: 30vh;
+}
+
+.carte img {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.carte img:hover, .carte:hover img {
+    opacity: 1;
+}
+
+.carte {
+    padding: 0;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
 }
